@@ -2,6 +2,8 @@
 
 A colorful, interactive web app for tracking and calculating sales expenses per salesperson.
 
+![Sales Expense Calculator](public/calculator-screenshot.png)
+
 ## Features
 
 - **Salesperson Selection** — Switch between salespeople to manage individual expenses
