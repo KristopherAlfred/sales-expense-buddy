@@ -91,10 +91,13 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background px-4 py-8">
+    <div className="min-h-screen bg-gradient-to-br from-primary/5 via-background to-secondary/5 px-4 py-8">
       <div className="mx-auto max-w-2xl space-y-6">
         <header className="text-center">
-          <h1 className="font-heading text-3xl font-bold text-foreground">
+          <div className="mx-auto mb-3 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-primary to-secondary shadow-lg">
+            <Download className="h-7 w-7 text-white" />
+          </div>
+          <h1 className="font-heading text-3xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
             Sales Expense Calculator
           </h1>
           <p className="mt-1 text-muted-foreground">
@@ -114,9 +117,9 @@ const Index = () => {
           totalCategories={EXPENSE_CATEGORIES.length}
         />
 
-        <Card>
+        <Card className="border-0 shadow-xl shadow-primary/5">
           <CardHeader className="pb-3">
-            <CardTitle className="font-heading text-lg">Expense Categories</CardTitle>
+            <CardTitle className="font-heading text-lg text-primary">Expense Categories</CardTitle>
           </CardHeader>
           <CardContent className="space-y-3">
             {EXPENSE_CATEGORIES.map((cat) => (
@@ -135,11 +138,11 @@ const Index = () => {
         </Card>
 
         <div className="flex gap-3">
-          <Button variant="outline" className="flex-1 gap-2" onClick={handleReset}>
+          <Button variant="outline" className="flex-1 gap-2 border-destructive/30 text-destructive hover:bg-destructive/10" onClick={handleReset}>
             <RotateCcw className="h-4 w-4" />
             Reset
           </Button>
-          <Button className="flex-1 gap-2" onClick={handleExport}>
+          <Button className="flex-1 gap-2 bg-gradient-to-r from-primary to-secondary hover:opacity-90 shadow-lg shadow-primary/25" onClick={handleExport}>
             <Download className="h-4 w-4" />
             Copy Summary
           </Button>
