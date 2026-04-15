@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Sparkles, LayoutDashboard, Compass, ClipboardList, User, LogOut, Menu, X } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 import { cn } from '@/lib/utils';
+import AIChatbot from '@/components/AIChatbot';
 
 const navItems = [
   { to: '/', icon: LayoutDashboard, label: 'Dashboard' },
@@ -114,6 +115,9 @@ export default function AppLayout() {
           <Outlet />
         </div>
       </main>
+
+      {/* AI Chatbot */}
+      <AIChatbot />
     </div>
   );
 }
