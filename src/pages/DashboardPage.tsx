@@ -35,7 +35,7 @@ export default function DashboardPage() {
 
   // Simple career matching: opportunities that include user's career goal
   const topMatches = useMemo(() => {
-    if (!profile?.career_goal) return opportunities.slice(0, 4);
+    if (!profile?.career_goal) return opportunities.slice(0, 4).map(opp => ({ opp, match: 0 }));
     const scored = opportunities.map(opp => {
       const match = opp.career_categories.includes(profile.career_goal) ? 90 : 30;
       return { opp, match };
