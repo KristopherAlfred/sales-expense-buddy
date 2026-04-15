@@ -49,7 +49,7 @@ export default function AuthPage() {
             <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
               <Sparkles className="w-5 h-5 text-primary-foreground" />
             </div>
-            <span className="text-2xl font-bold tracking-tight">TalentSync</span>
+            <span className="text-2xl font-bold tracking-tight text-foreground">TalentSync</span>
           </div>
           <p className="text-muted-foreground text-sm">
             AI-powered opportunity tracker for creatives
