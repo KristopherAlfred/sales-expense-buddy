@@ -21,7 +21,7 @@ function ProtectedRoute({ children }: { children: React.ReactNode }) {
 
 function AppRoutes() {
   return (
-    <div className="dark">
+    <div>
       <Routes>
         <Route path="/auth" element={<AuthPage />} />
         <Route
