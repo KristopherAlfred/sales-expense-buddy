@@ -1,9 +1,9 @@
 import { useState, useMemo, useCallback } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import ExpenseToggle from "@/components/ExpenseToggle";
-import ExpenseSummary from "@/components/ExpenseSummary";
-import SalespersonSelector from "@/components/SalespersonSelector";
+import ExpenseToggle from "@/calculator/components/ExpenseToggle";
+import ExpenseSummary from "@/calculator/components/ExpenseSummary";
+import SalespersonSelector from "@/calculator/components/SalespersonSelector";
 import {
   Car,
   Utensils,
